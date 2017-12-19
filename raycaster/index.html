@@ -13,7 +13,7 @@
       var MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
 
       function Controls() {
-        this.codes  = { 37: 'left', 39: 'right', 38: 'forward', 40: 'backward', 119: 'forward' };
+        this.codes  = { 87: 'left', 39: 'right', 38: 'forward', 40: 'backward', 119: 'forward' };
         this.states = { 'left': false, 'right': false, 'forward': false, 'backward': false };
         document.addEventListener('keydown', this.onKey.bind(this, true), false);
         document.addEventListener('keyup', this.onKey.bind(this, false), false);
